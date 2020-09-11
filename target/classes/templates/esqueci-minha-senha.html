@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Newsletter - Redefinir Senha Talentos</title>
+	<style type="text/css">
+		/* Client-specific Styles */
+		#outlook a {padding:0;} 
+		body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+		
+		.ExternalClass {width:100%;} 
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */
+		#backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+	
+		*/
+		img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;}
+		a img {border:none;}
+		.image_fix {display:block;}
+		
+		p {margin: 1em 0;}
+		
+		**/
+		h1, h2, h3, h4, h5, h6 {color: black !important;}
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: blue !important;}
+		h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+			color: red !important; /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+		 }
+		h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+			color: purple !important; /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+		}
+	
+		table td {border-collapse: collapse;}
+		
+		table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+		
+		a {color: orange;}
+		
+		@media only screen and (max-device-width: 480px) {
+			
+			a[href^="tel"], a[href^="sms"] {
+						text-decoration: none;
+						color: black; /* or whatever your want */
+						pointer-events: none;
+						cursor: default;
+					}
+			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+						text-decoration: default;
+						color: orange !important; /* or whatever your want */
+						pointer-events: auto;
+						cursor: default;
+					}
+		}
+		/* More Specific Targeting */
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+			/* You guessed it, ipad (tablets, smaller screens, etc) */
+			/* Step 1a: Repeating for the iPad */
+			a[href^="tel"], a[href^="sms"] {
+						text-decoration: none;
+						color: blue; /* or whatever your want */
+						pointer-events: none;
+						cursor: default;
+					}
+			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+						text-decoration: default;
+						color: orange !important;
+						pointer-events: auto;
+						cursor: default;
+					}
+		}
+		@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+			/* Put your iPhone 4g styles in here */
+		}
+		
+		@media only screen and (-webkit-device-pixel-ratio:.75){
+			
+		}
+		@media only screen and (-webkit-device-pixel-ratio:1){
+			
+		}
+		@media only screen and (-webkit-device-pixel-ratio:1.5){
+			
+		}
+		/* end Android targeting */
+	</style>
+
+	
+</head>
+<body style="font-size: 1em; color:#333; font-family: arial; line-height: 1.4;">
+	<table style="width: 600px; margin: 0 auto; line-height: 1.4; border: 1px solid #f3f3f3; font-family: arial;">
+		<tr>
+			<td style="background-image: url(http://www.senaiempresa.ms.senai.br/images/bg_topo_newsletter_psgt.jpg); background-repeat:no-repeat; background-position:center center; width: 600px; height: 102px;"></td>
+		</tr>
+		<tr>
+			<td style="padding: 1.5em; font-family: arial;">
+				<p>Olá ${paciente.senhaGeradaPorEmail}, tudo bem?</p>
+				<p>Foi solicitada a redefinição de sua senha de acesso ao Talentos da Indústria. Clique no link Redefinir Senha abaixo para trocar sua senha e continuar utilizando o Talentos da Indústria.</p>
+				<p>Caso você não tenha solicitado a redefinição de sua senha ignore este email.</p>
+				<p style="text-align: center;"><input type='button' style="padding: 1em 1.5em; background-color:#11324f; color: #fff; margin-top:0.9em; cursor: pointer; border: 0; font-size: 1.2em;" value="Redefinir Senha"></input></a></p>
+				<p style="text-align: center;">Atenciosamente,<br/>
+				Talentos da Indústria<br/></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="color:#000; text-align: center; padding: 1em 3.5em; background-color:#9eca3b; font-family: arial;">
+				<p>Em caso de dúvidas, favor entrar em contato através do email
+				<b>contato@talentosdaindustria.com.br</b>.<br/></p>
+				<p>
+		          <a class="white-text" href="http://facebook.com/talentosdaindustria" target="_BLANK"><img src="http://www.senaiempresa.ms.senai.br/images/f.png"></a>&nbsp;
+		          <a class="white-text" href="https://www.instagram.com/talentosdaindustria/" target="_BLANK"><img src="http://www.senaiempresa.ms.senai.br/images/i.png"></a>&nbsp;        
+          		</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p style="text-align:center; font-size: 0.8em; padding: 0.5em; font-family: arial;">Copyright 2018 - Talentos da Indústria. Todos os direitos reservados.</p>
+			</td>
+		</tr>						
+	</table>
+</body>
+</html>

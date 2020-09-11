@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "myhero.email",
+      "type": "com.myhero.config.EmailProperties",
+      "sourceType": "com.myhero.config.EmailProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "myhero.email.remetente",
+      "type": "java.lang.String",
+      "sourceType": "com.myhero.config.EmailProperties"
+    }
+  ],
+  "hints": []
+}
