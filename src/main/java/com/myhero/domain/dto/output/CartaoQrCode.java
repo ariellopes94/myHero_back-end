@@ -15,7 +15,7 @@ public class CartaoQrCode {
 		this.codigoGeradoPeloSistema = codigoGeradoPeloSistema;
 	}
 	public String getNome() {
-		return nome;
+		return abreviarNome(nome);
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -27,5 +27,26 @@ public class CartaoQrCode {
 		this.sexo = sexo;
 	}
 	
+	public String abreviarNome(String nomeInteiro) {
+
+		 // String  = ("Ariel Lopes de souza");
+		   nomeInteiro = nomeInteiro.replace(' ',';');
+		   String nomePedacos[] = nomeInteiro.split(";");
+		   int contador =0;
+		   String saida="";
+		   do {
+		         if  (contador == 0) {
+		                saida = saida + nomePedacos[contador];
+		          }
+		          else {
+		                saida = saida + " " + nomePedacos[contador].charAt(0) + ".";  
+		            System.out.println(saida);
+		           }
+
+		           contador++;
+		      } while(contador != nomePedacos.length);
+		   
+		   return saida;
+	}
 	
 }

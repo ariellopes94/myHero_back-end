@@ -116,10 +116,9 @@ public class PacienteService {
 			}
 			while (paciente.isPresent());
 		
-		enviarEmail(p);
+			//enviarEmail(p); ENVIAR EMAIL
 		 try {
 			 pacienteRepository.save(p);
-			  // ENVIAR EMAIL MOVER PARA OUTRO LUGAR DPS
 			 return p;
 			} catch (Exception e) {
 				return null;

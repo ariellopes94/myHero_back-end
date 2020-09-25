@@ -44,6 +44,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	private static final String[] PUBLIC_MATCHERS_GET = {
 			"/pacientes/fichaDoPaciente/{codigoGeradoPeloSistema}",
 			"/pacientes/gerarCodigoQrCode/{cpf}",
+			"/alergias",
+			"/doencas",
+			"/medicamentos",
 		     "/myheroappweb/pacientes/fichaDoPaciente/{codigoGeradoPeloSistema}" //Deleta, apenas para testar api no hiroku
 	};
 	

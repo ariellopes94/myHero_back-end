@@ -61,6 +61,7 @@ public class PacienteModelAssembler {
 		paciente.setTipoSanguinio(pacienteDto.getTipoSanguinio());
 		paciente.setEstadoMoradia(pacienteDto.getEstadoMoradia());
 		paciente.addPerfil(Perfil.PACIENTE);
+		paciente.setObservacao(pacienteDto.getObservacao());
 		
 		paciente.setMedicamentos(pacienteDto.getMedicamentos());
 		paciente.setDoencas(pacienteDto.getDoencas());
