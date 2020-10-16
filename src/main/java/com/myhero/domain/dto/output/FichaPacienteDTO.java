@@ -19,9 +19,8 @@ import com.myhero.enuns.Perfil;
 import com.myhero.enuns.Sexo;
 import com.myhero.enuns.TipoSanguinio;
 
-public class FichaPacienteDTO implements Serializable{
-	private static final long serialVersionUID = 1L;
-
+public class FichaPacienteDTO {
+	
 	private String nome;
 	private Integer idade;
 	private Boolean doadorDeOrgao;

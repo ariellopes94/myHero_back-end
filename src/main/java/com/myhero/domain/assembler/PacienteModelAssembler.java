@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import com.myhero.domain.Paciente;
 import com.myhero.domain.dto.input.PacienteDto;
 import com.myhero.domain.dto.output.CartaoQrCode;
+import com.myhero.domain.dto.output.CpfDTOprofile;
 import com.myhero.domain.dto.output.FichaPacienteDTO;
 import com.myhero.enuns.Perfil;
 import com.myhero.services.gerado_pelo_sistema.CodigoUnico;
@@ -79,5 +80,20 @@ public class PacienteModelAssembler {
 		cartao.setSexo(obj.getSexo().getCod());
 		
 		return cartao;
+	}
+	
+	public CpfDTOprofile modelPacienteToCpfDTOprofile(Paciente obj) {
+		
+		CpfDTOprofile profileDto = new CpfDTOprofile();
+		profileDto.setId(obj.getId());
+		profileDto.setCpf(obj.getCpf());
+		profileDto.setEmail(obj.getEmail());
+		profileDto.setNome(obj.getNome());
+		profileDto.setImageAvatarUrl(obj.getImageAvatarUrl());
+		
+		System.out.println(profileDto);
+		return profileDto;
+		
+		
 	}
 }

@@ -47,12 +47,12 @@ public class DBService {
 		//PACIENTE
 	    SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy"); 
 		
-		Paciente paciente1 = new Paciente(null , "82526067090", "Simone Lima Lopes", "simone_2019@gmail.com", false, "(67) 99548-4298", 72.5, 1.69, 
+		Paciente paciente1 = new Paciente(null , "82526067090", "Simone Lima Lopes", "simone_2019@gmail.com","imageAvatar", false, "(67) 99548-4298", 72.5, 1.69, 
 			                          formato.parse("09/11/1990"), Sexo.FEMININO, TipoSanguinio.A_POSITIVO, Estado.SAO_PAULO , "Plano de saude Unimed,numero: 4557-4458",passwordEncoder.encode("ariel123"));
 		paciente1.setCadastro(new Date());
-		paciente1.setCodigoGeradoPeloSistema("XTR300");
+		paciente1.setCodigoGeradoPeloSistema("AX700");
 		
-		Paciente paciente2 = new Paciente(null, "73038016004", "Ariel Lopes De Souza", "ariel-edit@hotmail.com", true, "(67) 8811-0088", 85.5, 1.79, 
+		Paciente paciente2 = new Paciente(null, "73038016004", "Ariel Lopes De Souza", "ariel-edit@hotmail.com", "imageAvatar", true, "(67) 8811-0088", 85.5, 1.79, 
                                           formato.parse("09/10/1994"),  Sexo.MASCULINO ,TipoSanguinio.O_NEGATIVO, Estado.MATO_GROSSO_DO_SUL, "Nenhuma",passwordEncoder.encode("teste123"));
 		paciente2.setCodigoGeradoPeloSistema("XTR700");
 		paciente2.setCadastro(new Date());

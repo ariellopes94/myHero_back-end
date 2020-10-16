@@ -1,20 +1,13 @@
 package com.myhero.services;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.AuthorizationServiceException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.myhero.domain.Paciente;
-import com.myhero.domain.dto.input.PacienteDto;
-import com.myhero.domain.dto.output.FichaPacienteDTO;
-import com.myhero.enuns.Perfil;
-import com.myhero.enuns.TipoSanguinio;
 import com.myhero.repositories.PacienteRepository;
 import com.myhero.security.UserSpringSecurity;
 import com.myhero.services.EnvioEmailService.Mensagem;

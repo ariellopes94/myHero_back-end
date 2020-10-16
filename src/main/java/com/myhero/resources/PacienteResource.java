@@ -22,6 +22,7 @@ import com.myhero.domain.Paciente;
 import com.myhero.domain.assembler.PacienteModelAssembler;
 import com.myhero.domain.dto.input.PacienteDto;
 import com.myhero.domain.dto.output.CartaoQrCode;
+import com.myhero.domain.dto.output.CpfDTOprofile;
 import com.myhero.domain.dto.output.FichaPacienteDTO;
 import com.myhero.services.PacienteService;
 import com.myhero.services.QrCodeService;
@@ -59,10 +60,19 @@ public class PacienteResource {
 	
 	//BuscarPorCpf
 	
+	/*
 	@GetMapping(value="/cpf")
-	public ResponseEntity<Paciente> buscarPorEmail(@RequestParam(value = "value") String cpf){
+	public ResponseEntity<Paciente> buscarPorCpf(@RequestParam(value = "value") String cpf){
 		Paciente obj = pacienteService.findByCpf(cpf);
 		return ResponseEntity.ok().body(obj);
+	}
+	
+	*/
+	
+	@GetMapping(value="/cpf")
+	public ResponseEntity<CpfDTOprofile> buscarPorCpf(@RequestParam(value = "value") String cpf){
+		Paciente obj = pacienteService.findByCpf(cpf);
+		return ResponseEntity.ok().body(pacienteModelAssembler.modelPacienteToCpfDTOprofile(obj));
 	}
 	
 	//CLIENTE DTO

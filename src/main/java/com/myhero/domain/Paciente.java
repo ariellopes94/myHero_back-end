@@ -42,6 +42,9 @@ public class Paciente implements Serializable {
 	private Date cadastro;
 	private String codigoGeradoPeloSistema;
 	
+	@NotEmpty(message = "Imagem é Obrigatorio")
+	private String imageAvatarUrl;
+	
 	@CPF(message = "CPF Inválido")
 	@Column(unique = true)
 	private String cpf;
@@ -117,7 +120,7 @@ public class Paciente implements Serializable {
 		addPerfil(Perfil.PACIENTE);
 	}
 
-	public Paciente(Long id , String cpf, String nome, String email,
+	public Paciente(Long id , String cpf, String nome, String email, String imageAvatarUrl,
 			Boolean doadorDeOrgao, String telefone, Double peso, Double altura, Date nascimento, Sexo sexo, TipoSanguinio  tipoSanguinio, Estado estadoMoradia,
 			String observacao, String senha) {
 		super();
@@ -136,6 +139,7 @@ public class Paciente implements Serializable {
 		this.estadoMoradia = estadoMoradia.getCod();
 		this.observacao = observacao;
 		this.senha = senha;
+		this.imageAvatarUrl = imageAvatarUrl;
 		addPerfil(Perfil.PACIENTE);
 	}
 
@@ -185,6 +189,14 @@ public class Paciente implements Serializable {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getImageAvatarUrl() {
+		return imageAvatarUrl;
+	}
+
+	public void setImageAvatarUrl(String imageAvatarUrl) {
+		this.imageAvatarUrl = imageAvatarUrl;
 	}
 
 	public Boolean getDoadorDeOrgao() {
