@@ -37,6 +37,9 @@ public class PacienteDto {
 	@NotEmpty(message = "Email é obrigatório")
 	private String email;
 	
+	@NotEmpty(message = "Imagem é Obrigatorio")
+	private String imageAvatarUrl;
+	
 	@NotEmpty(message = "Senha é obrigatório")
 	//@JsonIgnore
 	private String senha;
@@ -94,6 +97,15 @@ public class PacienteDto {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
+	public String getImageAvatarUrl() {
+		return imageAvatarUrl;
+	}
+	
+	public void setImageAvatarUrl(String imageAvatarUrl) {
+		this.imageAvatarUrl = imageAvatarUrl;
+	}
+	
 	public String getSenha() {
 		return senha;
 	}

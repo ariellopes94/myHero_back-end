@@ -52,6 +52,7 @@ public class PacienteModelAssembler {
 		paciente.setCpf(pacienteDto.getCpf());
 		paciente.setNome(pacienteDto.getNome());
 		paciente.setEmail(pacienteDto.getEmail());
+		paciente.setImageAvatarUrl(pacienteDto.getImageAvatarUrl());
 		paciente.setSenha(passwordEncoder.encode(pacienteDto.getSenha()));
 		paciente.setDoadorDeOrgao(pacienteDto.getDoadorDeOrgao());
 		paciente.setTelefone(pacienteDto.getTelefone());

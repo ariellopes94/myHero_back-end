@@ -92,7 +92,7 @@ public class PacienteResource {
 	}
 	
 	@PostMapping
-	public ResponseEntity<PacienteDto> insert( @RequestBody PacienteDto pacienteDto) {
+	public ResponseEntity<PacienteDto> insert(@Valid  @RequestBody PacienteDto pacienteDto) {
 	
 		Paciente obj = pacienteService.insert(pacienteModelAssembler.modelPacienteDtoToPaciente(pacienteDto));
 
