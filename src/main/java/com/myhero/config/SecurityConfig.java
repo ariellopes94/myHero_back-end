@@ -43,7 +43,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	private static final String[] PUBLIC_MATCHERS_GET = {
 			"/pacientes/fichaDoPaciente/{codigoGeradoPeloSistema}",
-			"/pacientes/gerarCodigoQrCode/{cpf}",
+			//"/pacientes/gerarCodigoQrCode/{cpf}",
 			"/alergias",
 			"/doencas",
 			"/medicamentos",
